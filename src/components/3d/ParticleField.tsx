@@ -6,27 +6,26 @@ import * as THREE from "three";
 
 function Particles({ count = 1000 }) {
   const mesh = useRef<THREE.InstancedMesh>(null);
-  const light = useRef<THREE.PointLight>(null);
 
   const particles = useMemo(() => {
     const temp = [];
     for (let i = 0; i < count; i++) {
       const time = Math.random() * 100;
-      const factor = Math.random() * 100 + 20;
       const speed = Math.random() * 0.01 + 0.005;
       const x = Math.random() * 200 - 100;
       const y = Math.random() * 200 - 100;
       const z = Math.random() * 200 - 100;
-      temp.push({ time, factor, speed, x, y, z });
+      temp.push({ time, speed, x, y, z });
     }
     return temp;
   }, [count]);
 
   const dummy = useMemo(() => new THREE.Object3D(), []);
 
-  useFrame((state) => {
+  useFrame(() => {
     particles.forEach((particle, i) => {
-      let { time, factor, speed, x, y, z } = particle;
+      let { time } = particle;
+      const { speed, x, y, z } = particle;
       time = particle.time += speed / 2;
       const a = Math.cos(time) + Math.sin(time * 1) / 10;
       const b = Math.sin(time) + Math.cos(time * 2) / 10;

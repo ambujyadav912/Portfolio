@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Float, MeshDistortMaterial, Wireframe } from "@react-three/drei";
+import { OrbitControls, Float, MeshDistortMaterial } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
 
@@ -60,7 +60,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-muted text-base md:text-lg max-w-xl font-medium leading-relaxed mt-4"
         >
-          Hi, I'm Ambuj Shyampat Yadav — a computer engineering student and developer focused on building practical digital experiences, experimenting with technology, and turning ideas into real products.
+          Hi, I&apos;m Ambuj Shyampat Yadav — a computer engineering student and developer focused on building practical digital experiences, experimenting with technology, and turning ideas into real products.
         </motion.p>
       </div>
 

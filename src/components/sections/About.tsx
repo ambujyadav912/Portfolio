@@ -35,7 +35,7 @@ export default function About() {
             </p>
             <p>
               I am deeply interested in software development, web and mobile technologies, and the intersection of UI/UX design. 
-              Exploring AI-assisted development and experimenting with new paradigms allows me to stay at the cutting edge of what's possible.
+              Exploring AI-assisted development and experimenting with new paradigms allows me to stay at the cutting edge of what&apos;s possible.
             </p>
           </motion.div>
 

@@ -1,10 +1,10 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { X, ZoomIn } from "lucide-react";
-import { cn } from "@/lib/utils";
+
 
 const achievements = [
   {
@@ -81,10 +81,6 @@ const achievements = [
 
 export default function Achievements() {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  });
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 

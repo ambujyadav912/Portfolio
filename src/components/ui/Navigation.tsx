@@ -71,7 +71,7 @@ export default function Navigation() {
         href="#contact"
         className="px-5 py-2 text-xs font-bold tracking-widest text-black bg-white rounded-full hover:bg-primary hover:text-white transition-all hover:scale-105"
       >
-        LET'S BUILD
+        LET&apos;S BUILD
       </Link>
     </motion.nav>
   );

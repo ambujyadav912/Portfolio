@@ -35,11 +35,11 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold tracking-tighter mb-16"
         >
-          WHAT I'VE BUILT
+          WHAT I&apos;VE BUILT
         </motion.h2>
 
         <div className="flex flex-col gap-24">
-          {projects.map((project, idx) => (
+          {projects.map((project) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 40 }}

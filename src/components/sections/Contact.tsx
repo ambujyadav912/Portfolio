@@ -17,7 +17,7 @@ export default function Contact() {
         >
           <div className="absolute inset-0 w-full h-full bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
           <h2 className="text-6xl md:text-8xl lg:text-[8rem] font-black tracking-tighter text-white mb-6 leading-none relative z-10">
-            LET'S BUILD <br />
+            LET&apos;S BUILD <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               SOMETHING.
             </span>
@@ -31,7 +31,7 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-muted text-xl md:text-2xl font-medium max-w-2xl mb-16"
         >
-          Have an idea, project or opportunity? Let's connect.
+          Have an idea, project or opportunity? Let&apos;s connect.
         </motion.p>
 
         <motion.div
